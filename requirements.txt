@@ -1,0 +1,20 @@
+# --- Core Orchestration ---
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+langchain-pinecone>=0.1.0
+
+# --- Ingestion & Parsing (REQ-01) ---
+# unstructured[pdf] ensures all PDF-specific dependencies are installed
+unstructured[pdf]>=0.12.0
+
+# --- Vector Database (REQ-04) ---
+pinecone-client>=3.0.0
+
+# --- API Framework (REQ-05 / Non-Functional) ---
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# --- Configuration & Utility ---
+python-dotenv>=1.0.0
+pydantic>=2.0.0
